@@ -4,58 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Anderson Ramos</title>
+    <meta name="description"
+        content="Portfólio de Anderson Ramos - Analista de Sistemas especializado em Python, SQL e integração de APIs.">
+    <meta name="author" content="Anderson Ramos">
+    <title>Anderson Ramos | Analista de Sistemas</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
 
-    <!-- O cabeçalho <> logo e o menu de navegação -->
-    <header>
-        <h1>Anderson Ramos</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- O conteúdo principal do site -->
-    <main>
-        <!-- Seção de Apresentação -->
-        <section id="sobre">
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Anderson Ramos</h1>
+            <p>
+                Analista de Sistemas com foco em desenvolvimento back-end,
+                integração de APIs e automação de processos com Python.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="Curriculo-Anderson-Ramos.pdf" class="btn-outline" download>Baixar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section">
+        <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Olá! Sou desenvolvedor web focado em criar experiências digitais inovadoras.</p>
-        </section>
 
-        <!-- Seção de Projetos -->
-        <section id="projetos">
-            <h2>Meus Projetos</h2>
-            <article>
-                <h3>Receitas-UMC</h3>
-                <p>O Site de Receitas é uma plataforma digital que reúne receitas para café da manhã, almoço, lanche e jantar, incentivando o preparo culinário com produtos da marca. Apresenta design moderno, valoriza a qualidade dos equipamentos e organiza seus conteúdos em seções como Blog.</p>
-            </article>
-            <article>
-                <h3>Projeto 2</h3>
-                <p>Descrição breve do projeto.</p>
-            </article>
-        </section>
+            <p>
+                Desenvolvo soluções focadas em eficiência operacional,
+                integração de sistemas e manipulação de dados.
+                Tenho experiência com Python, Java, SQL Server, MySQL
+                e versionamento com Git/GitHub.
+            </p>
 
-        <!-- Seção de Contato -->
-        <section id="contato">
+            <p>
+                Atuo na criação de automações, integrações com APIs
+                e desenvolvimento back-end, sempre buscando código limpo,
+                segurança e alinhamento às regras de negócio.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-java-plain colored"></i>
+                    <span>Java</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-microsoftsqlserver-plain colored"></i>
+                    <span>SQL Server</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-mongodb-plain colored"></i>
+                    <span>MongoDB</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-card">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Projetos em Destaque</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Receitas UMC</h3>
+                    <p>
+                        Plataforma web desenvolvida para organização de receitas,
+                        com layout responsivo e estrutura modular em HTML, CSS e JavaScript.
+                    </p>
+
+                    <ul>
+                        <li>✔ Estrutura responsiva</li>
+                        <li>✔ Organização por categorias</li>
+                        <li>✔ Interface moderna</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="https://anderson-rdev.github.io/Receitas-UMC/" target="_blank"
+                            rel="noopener noreferrer">
+                            Ver Projeto
+                        </a>
+
+                        <a href="https://github.com/anderson-rdev/Receitas-UMC" target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Sistema de Automação com Python</h3>
+                    <p>
+                        Sistema de Avaliação e Bonificação de Funcionários desenvolvido em Python,
+                        utilizando bibliotecas para processamento de dados Este projeto tem como objetivo
+                        automatizar a avaliação periódica de funcionários com base em tempo de serviço,
+                        assiduidade e regras corporativas de bonificação salarial.
+                    </p>
+
+                    <ul>
+                        <li>✔ Visualização de Funcionários Ativos e Inativos</li>
+                        <li>✔ Regras de Progressão no Banco</li>
+                        <li>✔ Grau Atual e Próximo Avaliativo</li>
+                        <li>✔ Cálculo de Bônus e Novo Salário</li>
+                        <li>✔ Impacto na Folha de Pagamento</li>
+                        <li>✔ Avaliação Automática</li>
+                        <li>✔ Tratamento de Licença Maternidade</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="https://github.com/anderson-rdev/automatizacao-desafio-mysql.git" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section bg-light">
+        <div class="container">
             <h2>Contato</h2>
-            <p>Vamos trabalhar juntos? <a href="mailto:email@exemplo.com">Envie-me um e-mail</a>.</p>
-        </section>
-    </main>
 
-    <!-- O rodapé -->
+            <p>
+                Interessado em trabalhar juntos ou discutir uma oportunidade?
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:anderson.ramos@outlook.com" class="btn-primary">
+                    Enviar E-mail
+                </a>
+
+                <a href="https://github.com/anderson-rdev" target="_blank" class="btn-outline">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/andersonramos-profissional" target="_blank" class="btn-outline">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; Anderson Ramos. </p>
+        <div class="container">
+            <p>&copy; 2026 Anderson Ramos. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js" defer></script>
+
 </body>
 
 </html>
